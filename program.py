@@ -3,7 +3,7 @@ __author__ = "Sona Bartekova, Ingrid Bohunicka, Jan Filip Kotora, Maria Meriova"
 __version__ = "1.0.1"
 __maintainer__ = "--"
 __email__ = "--"
-__status__ = "Prototype"
+__status__ = "Release"
 
 # import libraries
 import vlc
