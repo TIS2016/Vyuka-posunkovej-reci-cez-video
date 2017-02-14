@@ -186,7 +186,7 @@ class Player(Tk.Frame):
         self.mainvideopanel = ttk.Frame(self.videopanel, relief="sunken", width=self.vidx, height=self.vidy, borderwidth=5)
         self.canvas = Tk.Canvas(self.mainvideopanel, width=self.vidx, height=self.vidy).pack(side=Tk.TOP, expand=1)
         self.mainvideopanel.pack(side=Tk.TOP)
-        # obsluzne talcidla hlavneho videa
+        # obsluzne tlacidla hlavneho videa
         ctrlpanel = ttk.Frame(self.videopanel)
         play = ttk.Button(ctrlpanel, text="Play/Pause", command=self.OnPlay)
         stop = ttk.Button(ctrlpanel, text="Stop", command=self.OnStop)
@@ -311,7 +311,7 @@ class Player(Tk.Frame):
             self.player.set_time(int(mval))  # milliseconds
 
     def EnnCamera(self):
-        """"zapne/vpne webkameru"""
+        """"zapne/vypne webkameru"""
         if self.mainvidplay == True: return
         if self.reccamplay == False:
             self.reccamplay = True
